@@ -12,6 +12,12 @@
 
         <link rel="stylesheet" href="./styles.css">
 
+        <!-- Link Swiper's CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+
     </head>
     <body>
         <header>
@@ -29,8 +35,10 @@
                     <h2>Meus jogos</h2>
                     <p>Os games que eu mais curto jogar!</p>
 
-                    <ul class="games-list">
-                        <li>
+                    <div class="swiper mySwiper">
+
+                        <ul class="games-list swiper-wrapper">
+                        <li class="swiper-slide">
                             <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Overwatch">
@@ -38,7 +46,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="swiper-slide">
                             <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Stardew%20Valley">
@@ -46,7 +54,7 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="swiper-slide">
                             <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Genshin%20Impact">
@@ -54,21 +62,24 @@
                             </a>
                         </li>
 
-                        <li>
+                        <li class="swiper-slide">
                             <a 
                             target="_blank"
                             href="https://www.twitch.tv/directory/game/Mario%20Kart%208%20Deluxe">
                             <img src="https://static-cdn.jtvnw.net/ttv-boxart/941530474_IGDB-188x250.jpg" alt="Imagem do jogo Genshin Impact">
                             </a>
                         </li>
-                    </ul>
+                        </ul>
+
+                    </div>
+
                 </div>
             </section>
 
             <section>
                 <div>
                     <h2>Canais e streamers</h2>
-                    <p>Lista de canais e transmissões que não perco!</p>
+                    <p>Lista de canais que não perco!</p>
 
                     <ul class="channel-list">
                         <li>
@@ -143,5 +154,16 @@
 
         </main>
 
+    <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                loop: false
+            });
+        </script>
     </body>
 </html>

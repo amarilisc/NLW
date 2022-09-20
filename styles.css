@@ -48,13 +48,12 @@ header div img {
 }
 
 main {
-    max-width: 580px;
+    max-width: 360px;
     width: 90%;
     margin: 32px auto;
 
     display: grid;
     gap: 24px;
-
 }
 
 section {
@@ -103,8 +102,13 @@ section ul li:hover {
 
 .channel-list img {
     width: 70px;
+    margin-right: 8px;
     border-radius: 50%;
     border: 1px solid #443E54;
+}
+
+.social-list svg {
+    margin-right: 8px;
 }
 
 /* animation */
@@ -151,4 +155,14 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* swiper */
+section { 
+    overflow: hidden;
+}
+section ul {
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    gap: 0;
 }
